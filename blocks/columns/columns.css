@@ -31,3 +31,80 @@
     order: unset;
   }
 }
+
+
+.columns.columns2 {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Flexbox side-by-side layout, minimal gap, edge-to-edge alignment */
+.columns.columns2 > div {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (width <= 900px) {
+  .columns.columns2 > div {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Columns: equal width, visually wider aspect, edge-to-edge fill */
+.columns.columns2 .columns-img-col {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: stretch;
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  height: 0;
+  padding-bottom: 62.5%;
+  background: #fff;
+}
+
+@supports (aspect-ratio: 16/10) {
+  .columns.columns2 .columns-img-col {
+    height: auto;
+    padding-bottom: 0;
+  }
+}
+
+/* Fill container, crop image, round corners, edge-to-edge fill */
+.columns.columns2 .columns-img-col picture,
+.columns.columns2 .columns-img-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+@supports (aspect-ratio: 16/10) {
+  .columns.columns2 .columns-img-col picture,
+  .columns.columns2 .columns-img-col img {
+    position: static;
+  }
+}
+
+.columns.columns2 .columns-img-col picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
