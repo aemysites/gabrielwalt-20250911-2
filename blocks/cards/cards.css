@@ -25,3 +25,85 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+
+.cards.cardsnoimages3 {
+  background: #fff;
+  padding: 24px 0 0;
+}
+
+.cards.cardsnoimages3 > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(48px, auto);
+  gap: 16px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  place-items: start start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (width <= 1024px) {
+  .cards.cardsnoimages3 > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 16px;
+  }
+}
+
+@media (width <= 600px) {
+  .cards.cardsnoimages3 > ul {
+    grid-template-columns: 1fr;
+    gap: 16px 0;
+  }
+}
+
+.cards.cardsnoimages3 > ul > li {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.cards.cardsnoimages3 .cards-card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  min-height: 24px;
+}
+
+.cards.cardsnoimages3 .cards-card-body::before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  box-sizing: border-box;
+  vertical-align: top;
+  content: "";
+}
+
+.cards.cardsnoimages3 .cards-card-body p {
+  font-size: 13px;
+  color: #222;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+@media (width <= 900px) {
+  .cards.cardsnoimages3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
