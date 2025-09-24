@@ -1,0 +1,212 @@
+{
+  "fragments": [
+    {
+      "name": "nav",
+      "path": "/nav",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]"
+        }
+      ],
+      "styles": {
+        "height": 75,
+        "background": "rgb(247, 248, 245) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    },
+    {
+      "name": "footer",
+      "path": "/footer",
+      "totalBoxes": 1,
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-12-a507e040135207256fc0c4fd07f12510b5a9e729",
+          "xpath": "/html[1]/body[1]/footer[1]"
+        }
+      ],
+      "styles": {
+        "background": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box"
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "name": "header",
+      "cluster": 1,
+      "source": "Header",
+      "target": "Header (header1)",
+      "key": "header1",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-00-6e70765a003047818ea5700b557b8d01b43078df",
+          "xpath": "/html[1]/body[1]/div[1]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 2,
+      "source": "Columns",
+      "target": "Columns (columns2)",
+      "key": "columns2",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-02-a4e8d78da6e5b4998fbb5ce0f6afa7284e895f2e",
+          "xpath": "/html[1]/body[1]/header[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Cards (no images)",
+      "cluster": 3,
+      "source": "Cards",
+      "target": "Cards (cardsNoImages3)",
+      "key": "cardsNoImages3",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-04-69306c16bac5563398ce327c71e7f1e9493b6265",
+          "xpath": "/html[1]/body[1]/section[1]/div[1]/div[1]"
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "cluster": 4,
+      "source": "Cards",
+      "target": "Cards (cards4)",
+      "key": "cards4",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-07-261c42ba0b32bcb3fb5c83c560b10c2435ad553d",
+          "xpath": "/html[1]/body[1]/section[2]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Tabs",
+      "cluster": 5,
+      "source": "Tabs",
+      "target": "Tabs (tabs5)",
+      "key": "tabs5",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-08-7c4b411c256121bb1e0e58c581250626ad209dca",
+          "xpath": "/html[1]/body[1]/section[3]/div[1]/div[1]",
+          "section": "section-2"
+        }
+      ]
+    },
+    {
+      "name": "Accordion",
+      "cluster": 6,
+      "source": "Accordion",
+      "target": "Accordion (accordion6)",
+      "key": "accordion6",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-10-d6e8337d5ab20159acc6ca0a1ea736639b279659",
+          "xpath": "/html[1]/body[1]/section[4]/div[1]/div[2]",
+          "section": "section-1"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 7,
+      "source": "Columns",
+      "target": "Columns (columns7)",
+      "key": "columns7",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-11-2543d43dac63c32e3ccae4aae2045cbf1572ea04",
+          "xpath": "/html[1]/body[1]/section[5]"
+        }
+      ]
+    },
+    {
+      "name": "Columns",
+      "cluster": 8,
+      "source": "Columns",
+      "target": "Columns (columns8)",
+      "key": "columns8",
+      "instances": [
+        {
+          "url": "https://www.wknd-trendsetters.site/",
+          "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+          "uuid": "1b9ba84f-12-a507e040135207256fc0c4fd07f12510b5a9e729",
+          "xpath": "/html[1]/body[1]/footer[1]",
+          "section": "section-2"
+        }
+      ]
+    }
+  ],
+  "outliers": [
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+      "uuid": "1b9ba84f-01-70928af0e9d7f0ac1f13f2d60f543d2cf08783dd",
+      "xpath": "/html[1]/body[1]/header[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+      "uuid": "1b9ba84f-03-5ca35d327fe38541f922f7ca000528089974c8ac",
+      "xpath": "/html[1]/body[1]/section[1]/div[1]/h2[1]"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+      "uuid": "1b9ba84f-05-adda47d09d7763b69d96936602e835dec2004e55",
+      "xpath": "/html[1]/body[1]/section[1]/div[1]/div[2]"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+      "uuid": "1b9ba84f-06-f3bed983a6611794488e2f927319697f2e0241b2",
+      "xpath": "/html[1]/body[1]/section[2]/div[1]/div[1]",
+      "section": "section-1"
+    },
+    {
+      "url": "https://www.wknd-trendsetters.site/",
+      "urlHash": "1b9ba84f36ee3a519917302a79dfd970725bae31",
+      "uuid": "1b9ba84f-09-fa7cfbd97e67d1a5b40f91d24997450830c17770",
+      "xpath": "/html[1]/body[1]/section[4]/div[1]/div[1]",
+      "section": "section-1"
+    }
+  ],
+  "sections": [
+    {
+      "name": "section-1",
+      "background": "rgb(247, 248, 245) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 7
+    },
+    {
+      "name": "section-2",
+      "background": "rgb(0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "count": 2
+    }
+  ]
+}
