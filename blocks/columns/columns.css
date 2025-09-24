@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -122,42 +123,38 @@
 .columns.columns7 > div {
   display: flex;
   flex-direction: row;
-  align-items: center; /* Center columns vertically as a whole */
+  align-items: center;
   gap: 56px;
   width: 100%;
-  min-height: 450px; /* Matches screenshot height for vertical centering */
+  min-height: 450px;
 }
 
-/* Left column: headline + description, centered as a group */
 .columns.columns7 > div > div:first-child {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center; /* Center headline+description vertically */
+  justify-content: center;
   height: 100%;
   min-width: 0;
   flex: 1 1 0%;
 }
 
-/* Headline styling */
 .columns.columns7 > div > div:first-child h2 {
   color: #1A1A1A;
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 1.1;
-  margin: 0 0 18px; /* margin-bottom for grouping */
+  margin: 0 0 18px;
   letter-spacing: 0.02em;
 }
 
-/* Description: grouped under headline */
 .columns.columns7 > div > div:first-child p {
   color: #5B5B5B;
   font-size: 1rem;
   line-height: 1.6;
-  margin: 0; /* tightly grouped, no excessive margin */
+  margin: 0;
 }
 
-/* Right column: button stack, centered vertically */
 .columns.columns7 > div > div:last-child {
   display: flex;
   flex-direction: column;
@@ -166,7 +163,6 @@
   min-width: 220px;
 }
 
-/* Vertical stack of pill-shaped buttons */
 .columns.columns7 > div > div:last-child p {
   display: flex;
   flex-direction: column;
@@ -198,7 +194,6 @@
   box-shadow: 0 1.5px 0 0 #FFFFB0 inset;
 }
 
-/* Responsive: stack columns on small screens */
 @media (width <= 899px) {
   .columns.columns7,
   .columns.columns7 > div {
@@ -218,4 +213,160 @@
     width: 100%;
     min-width: 180px;
   }
+}
+
+
+.columns.columns8 {
+  background: #000;
+  border-bottom: 1px solid #fff;
+  padding: 40px 0 30px;
+}
+
+/* Top-level: lay out columns side by side using flex row */
+.columns.columns8 > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (width <= 900px) {
+  .columns.columns8 > div {
+    flex-direction: column;
+    gap: 36px;
+    max-width: 100%;
+  }
+}
+
+/* Each column: stack children vertically */
+.columns.columns8 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+/* First column: logo/title/social - align logo and title horizontally, icons below */
+.columns.columns8 > div > div:first-child {
+  gap: 18px;
+  min-width: 220px;
+}
+
+/* Logo/title row: align horizontally and center vertically */
+.columns.columns8 > div > div:first-child > p:first-child,
+.columns.columns8 > div > div:first-child > .button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+/* Logo image sizing */
+.columns.columns8 > div > div:first-child img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* Title styling: plain white uppercase text, not a button */
+.columns.columns8 > div > div:first-child .button {
+  background: none;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Social icons: display inline row, hide text links */
+.columns.columns8 > div > div:first-child ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.columns.columns8 > div > div:first-child ul li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Only show icons, hide text (for blocks with mixed icon/text) */
+.columns.columns8 > div > div:first-child ul a:not(:has(picture)) {
+  font-size: 0;
+}
+
+/* Make icons white for consistency */
+.columns.columns8 > div > div:first-child ul img {
+  width: 22px;
+  height: 22px;
+  filter: invert(1);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Columns 2, 3, 4: menu columns, stack vertically */
+.columns.columns8 > div > div:not(:first-child) {
+  gap: 12px;
+  min-width: 140px;
+  align-items: flex-start;
+}
+
+/* Headings in columns: muted gray, uppercase, smaller */
+.columns.columns8 > div > div:not(:first-child) h2 {
+  color: #666;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+/* Menu links: stack vertically, white, no bullets */
+.columns.columns8 > div > div:not(:first-child) ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columns.columns8 > div > div:not(:first-child) ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.columns.columns8 > div > div:not(:first-child) ul a {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.columns.columns8 > div > div:not(:first-child) ul a:hover {
+  color: #aaa;
+}
+
+/* Remove excessive spacing from all direct children */
+.columns.columns8 > div > div > * {
+  margin-top: 0;
+  margin-bottom: 0;
 }
