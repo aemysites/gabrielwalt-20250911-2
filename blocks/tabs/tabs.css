@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 .tabs .tabs-list {
   display: flex;
   gap: 0.5ch;
@@ -55,4 +56,182 @@
 
 .tabs .tabs-panel[aria-hidden='true'] {
   display: none;
+}
+
+
+.tabs.tabs5 {
+  background: #000;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Tabs row at the top, spaced and centered */
+.tabs.tabs5 .tabs-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 64px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 64px;
+  padding: 0 32px;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+/* Tab button styling */
+.tabs.tabs5 .tabs-list .tabs-tab {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.08em;
+  transition: color 0.2s;
+  position: relative;
+  cursor: pointer;
+  border-radius: 0;
+  line-height: 1.2;
+  min-width: 0;
+  text-align: center;
+  box-sizing: border-box;
+  border-bottom: none;
+}
+
+/* Remove previous underline from button itself */
+
+/* Underline only the tab text */
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="true"] p {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Inactive tab text: no underline */
+.tabs.tabs5 .tabs-list .tabs-tab:not([aria-selected="true"]) p {
+  border-bottom: none;
+  padding-bottom: 8px;
+}
+
+/* Tab text */
+.tabs.tabs5 .tabs-list .tabs-tab p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Active tab color */
+.tabs.tabs5 .tabs-list .tabs-tab[aria-selected="true"] {
+  color: #fff;
+}
+
+/* Panel visibility */
+.tabs.tabs5 .tabs-panel[aria-hidden="true"] {
+  display: none;
+}
+
+.tabs.tabs5 .tabs-panel[aria-hidden="false"] {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+/* Panel content vertical stacking and centering */
+.tabs.tabs5 .tabs-panel > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Headline styles */
+.tabs.tabs5 .tabs-panel h3 {
+  margin-top: 0;
+  margin-bottom: 48px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.22em;
+  font-weight: 500;
+  line-height: 1.15;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+}
+
+/* Remove panel border and background */
+.tabs.tabs5 .tabs-panel {
+  background: none;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Image block styling */
+.tabs.tabs5 .tabs-panel picture,
+.tabs.tabs5 .tabs-panel img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+  border-radius: 24px;
+  background: #000;
+  box-shadow: none;
+}
+
+.tabs.tabs5 .tabs-panel img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 0;
+}
+
+.tabs.tabs5 .tabs-panel p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (width <= 900px) {
+  .tabs.tabs5 {
+    max-width: 100vw;
+  }
+
+  .tabs.tabs5 .tabs-list {
+    gap: 32px;
+    margin-bottom: 40px;
+    padding: 0 16px;
+  }
+
+  .tabs.tabs5 .tabs-panel h3 {
+    font-size: 1.7rem;
+    letter-spacing: 0.13em;
+  }
+
+  .tabs.tabs5 .tabs-panel img {
+    border-radius: 16px;
+  }
+
+  .tabs.tabs5 .tabs-panel[aria-hidden="false"] {
+    max-width: 100vw;
+  }
 }
